@@ -1,12 +1,12 @@
 # email-administration-application
-
+git status
 
 
 The email-app program allows the user to generate a complete email account with randomly generated password.
 
 
 
-## Getting Started!
+## Getting Started
 
 
 
