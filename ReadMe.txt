@@ -6,7 +6,7 @@ The email-app program allows the user to generate a complete email account with 
 
 
 
-## Getting Started
+## Getting Started!
 
 
 
