@@ -22,7 +22,7 @@ public class Email {
 		
 		System.out.println("Creating email account for " + this.firstName + " " + this.lastName);
 		
-		emailName = this.firstName.toLowerCase() + this.lastName.toLowerCase() + "." + deptName + "@" + this.companySuffix + ".com";
+		emailName = this.firstName.toLowerCase() + this.lastName.toLowerCase() + "." + deptName.toLowerCase() + "@" + this.companySuffix + ".com";
 		emailDetails = "\nMailbox capacity: " + this.mailboxCapacity + "GB. \nYour password is: " +this.password;
 	}
 
@@ -45,10 +45,10 @@ public class Email {
 		return lastName;
 	}
 
-	public String setLastName(String lastName) {
+	/*public String setLastName(String lastName) {
 		this.lastName = lastName;
 		return this.lastName;
-	}
+	}*/
 
 	public String getDeptName(String deptName) {
 		// asking for the dept the employee works for. 
