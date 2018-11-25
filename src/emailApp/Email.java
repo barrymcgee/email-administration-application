@@ -27,31 +27,24 @@ public class Email {
 	}
 
 	public String getFirstName(String name) {
-		
-		
 		Scanner sc = new Scanner(System.in);
-		String firstName;
+		String firstName = "";
 		boolean isName = false;
 		//String empty = "";
-		
-			
+
 		do {
 				System.out.println("Please enter your first name: ");
 				firstName = sc.nextLine();
-				if (firstName.isEmpty() || sc.hasNextInt()) {
+				if (firstName.isEmpty() || firstName.matches(".*\\d+.*")) {
 					isName = false;
 					System.out.println("You must enter a value between [a-zA-Z] to proceed");
-					sc.next();
+					//sc.next();
 				}else {
 					//firstName = sc.nextLine();
 					isName = true;
-					
-				}
-				
-		} while (isName = false);			
-					
-				
-				return firstName; 
+				}	
+		} while (isName == false);	
+		return firstName;
 	} 
 
 	public String setFirstName(String firstName) {
