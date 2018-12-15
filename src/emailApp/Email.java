@@ -29,21 +29,18 @@ public class Email {
 	public String getFirstName(String name) {
 		Scanner sc = new Scanner(System.in);
 		String firstName = "";
-		boolean isName = false;
-		//String empty = "";
+		boolean isFirstName = false;
 
 		do {
 				System.out.println("Please enter your first name: ");
 				firstName = sc.nextLine();
 				if (firstName.isEmpty() || firstName.matches(".*\\d+.*")) {
-					isName = false;
+					isFirstName = false;
 					System.out.println("You must enter a value between [a-zA-Z] to proceed");
-					//sc.next();
 				}else {
-					//firstName = sc.nextLine();
-					isName = true;
+					isFirstName = true;
 				}	
-		} while (isName == false);	
+		} while (isFirstName == false);	
 		return firstName;
 	} 
 
@@ -53,9 +50,21 @@ public class Email {
 	}
 
 	public String getLastName(String name) {
-		System.out.println("Please enter your last name: ");
 		Scanner sc = new Scanner(System.in);
-		String lastName = sc.nextLine();
+		String lastName = "";
+		boolean isLastName = false;
+		
+		do {
+			System.out.println("Please enter your last name: ");
+			lastName = sc.nextLine();
+			if (lastName.isEmpty() || lastName.matches(".*\\d+.*")) {
+				isLastName = false;
+				System.out.println("You must enter a value between [a-zA-Z] to proceed");
+			}else {
+				isLastName = true;
+			}
+			
+		}while (isLastName == false);
 		return lastName;
 	}
 
